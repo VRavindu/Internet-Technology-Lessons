@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Pseudo</title>
+
+    <style>
+        button{
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 80px;
+        }   
+
+        button:hover{
+            background-color: red;
+            cursor: progress;
+        }
+        button::after{
+            content: "Click ME";
+        }
+        button:hover::after{
+            content: "Hi There !!";
+        }
+
+        li:first-child{
+            color: red;
+        }
+        li:nth-child(3){
+            color: blueviolet;
+        }
+        li:last-child{
+            color: yellow;
+        }
+
+        /* Pseudo Element */
+
+        p::before{
+            content: "Read more...";
+            color: red;
+        }
+        p::after{
+            content: "The END";
+            color: red;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+            color: blue;
+        }
+        p::first-line{
+            font-weight: bold;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <a href="/pages/lesson-css-base.html"><h2>CSS BASE</h2></a>
+    <a href="/pages/lesson-css-selector.html"><h2>CSS Selectors</h2></a>
+    <h1>Lesson Pseudo</h1>
+
+    <h2>Pseudo Classes</h2>
+
+    <button> </button>
+
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <h2>Pseudo Element</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam unde odit explicabo dolore magnam at, 
+        magni dolorum voluptatem minus ipsam vero officiis, facere est? Quisquam beatae autem ducimus inventore eaque nostrum, 
+        facere porro, dolores voluptas, possimus a optio esse nesciunt! Sapiente doloremque corporis nisi velit rerum dignissimos 
+        sequi totam nulla minima officiis, quam quasi unde quaerat ullam eveniet, dolore distinctio dolorem ad, animi saepe. Laborum ipsa 
+        possimus dolore quae unde fugiat architecto earum autem ullam similique ducimus omnis dolor, esse nulla provident. Dolores 
+        cupiditate corporis expedita, iste soluta officia reprehenderit suscipit corrupti harum quaerat quas nam pariatur nostrum 
+        eveniet esse excepturi labore impedit obcaecati facere dolore? Expedita rem libero mollitia unde dolores, voluptatem magnam 
+        numquam placeat ea veritatis esse sapiente alias. Eos suscipit incidunt cumque laboriosam possimus, vel qui sunt, quia quisquam, 
+        sint commodi necessitatibus aliquid a. Maxime recusandae ex sint commodi cumque minima reiciendis, maiores non repellendus vitae! 
+        Non ut adipisci earum debitis culpa itaque aliquam sequi tempore, voluptatem inventore ea perferendis quas sint minus voluptate ipsa.
+         Quaerat laboriosam molestiae et totam sit vitae nulla dolore magni quibusdam sed sunt tempore 
+        ab accusantium officia neque rem similique, ut doloribus vero voluptates ad dolorum voluptatibus laborum. Impedit, maiores atque.</p>
+</body>
+</html>

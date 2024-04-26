@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    
+    <style>
+        /* Element Selector */
+        h2{
+            color: blue;
+        }
+
+        /* ID Selector */
+        #mainHeading{
+            color: brown;
+        }
+
+        /* Class Selector */
+        .heading{
+            color: red;
+        }
+
+        /* Attribute Selector */
+        input[type="text"]{
+            background-color: aquamarine;
+        }
+
+        /* Pseudo Selector */
+        button:hover{
+            color: white;
+            background-color: black;
+        }
+        p::first-letter{
+            font-weight: bolder;
+            font-size: 25px;
+        }
+
+        /* Desendant Selector */
+        div h4{
+            color: red;
+        }
+        div div p{
+            background-color: bisque;
+        }
+
+        /* Child Selector */
+        div > h5 {
+            font-weight: bold;
+            font-style: italic;
+            color: blue;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            background-color:violet;
+        }
+
+        h5 ~ p{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="/pages/lesson-css-base.html"><h2>CSS BASE</h2></a>
+    <h1>CSS Selectors</h1>
+
+    ========= 1. Element Selector =========
+
+    <h2>Element Selector</h2>
+
+    ========= 2. ID Selector =========
+
+    <h2 id="mainHeading">ID Selector</h2>
+
+    ========= 3. Class Selector =========
+
+    <h2 class="heading">Class Selector</h2>
+    <h3 class="heading">Class Selector</h3>
+    <h4 class="heading">Class Selector</h4>
+
+    ========= 4. Attribute Selector =========
+
+    <br><br>
+    <input type="text" placeholder="Enter your Name : ">
+    <br><br>
+    <input type="number" placeholder="Enter your Age : ">
+    <br><br>
+
+    <a href="/pages/lesson-pseudo.html"><h4>Lesson Pseudo</h4></a>
+    ========= 5. Pseudo Classes Selector =========
+    <br>
+    <button>Click Me</button>
+    <br>
+    ========= 6. Pseudo Elemennt Selector =========
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magnam 
+        eaque corrupti quasi ex, numquam mollitia recusandae architecto iste quaerat dolores, 
+        ullam corporis explicabo laudantium at eius repudiandae autem labore!</p>
+
+    ========= 7. Desendant Selector =========
+
+    <div>
+        <h4>Desendant Selector</h4>
+
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis cumque inventore facilis placeat, dolor provident pariatur quibusdam dolore dolorum minus.</p>
+        </div>
+    </div>
+
+    ========= 8. Child Selector (>) =========
+
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>HTML</h5>
+        <h5>Javascript</h5>
+    </div>
+
+    ========= 9. Adjacent Sibling Selector =========
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, blanditiis delectus deleniti vel id ipsam odio maiores voluptatum inventore. Doloremque!</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, distinctio!</p>
+
+    ========= 9. General Sibling Selector =========
+
+    <h5>General Sibling Selector</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur ex asperiores sed tempora natus cum delectus nisi blanditiis vitae!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, deleniti distinctio! Aspernatur nihil doloribus facere?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, cupiditate! At iure voluptatum animi praesentium, nihil asperiores autem atque inventore laborum minus quia, officia, veniam quasi! Eligendi accusantium magnam optio.</p>
+
+</body>
+</html>
