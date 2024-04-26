@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-Media Query</title>
+
+    <style>
+        .heading {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .card {
+            /* width: 250px; */
+            height: fit-content;
+            border: 2px solid;
+            border-radius: 20px;
+            background-color: #c6eaff;
+        }
+
+        .round {
+            height: 40px;
+            width: 40px;
+            border: 1px solid;
+            border-radius: 25px;
+            background-color: gray;
+        }
+        .card-head {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container {
+            padding: 10px;
+            display: grid;
+            gap: 10px;
+        }
+
+        img {
+            width: 20px;
+        }
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .content {
+            background-color: wheat;
+            border: 2px solid;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding-top: 10px;
+        }
+
+        @media screen and (max-width: 575px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width: 576px) and (max-width: 767px){
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px){
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media screen and (min-width: 992px) and (max-width: 1199px){
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1399px){
+            .container {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+        @media screen and (min-width: 1400px){
+            .container {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 class="heading">Review Corner</h1>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-head">
+                <div class="round"></div>
+                <div class="stars">
+                    <ul>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum numquam iusto,  Vel deserunt nemo animi cum facilis nostrum corrupti odio quisquam eveniet dolor, ipsum omnis!
+                </div>
+                <div class="name">
+                    Ravindu
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <div class="round"></div>
+                <div class="stars">
+                    <ul>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum numquam iusto,  Vel deserunt nemo animi cum facilis nostrum corrupti odio quisquam eveniet dolor, ipsum omnis!
+                </div>
+                <div class="name">
+                    Ravindu
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <div class="round"></div>
+                <div class="stars">
+                    <ul>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum numquam iusto,  Vel deserunt nemo animi cum facilis nostrum corrupti odio quisquam eveniet dolor, ipsum omnis!
+                </div>
+                <div class="name">
+                    Ravindu
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <div class="round"></div>
+                <div class="stars">
+                    <ul>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum numquam iusto,  Vel deserunt nemo animi cum facilis nostrum corrupti odio quisquam eveniet dolor, ipsum omnis!
+                </div>
+                <div class="name">
+                    Ravindu
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <div class="round"></div>
+                <div class="stars">
+                    <ul>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum numquam iusto,  Vel deserunt nemo animi cum facilis nostrum corrupti odio quisquam eveniet dolor, ipsum omnis!
+                </div>
+                <div class="name">
+                    Ravindu
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <div class="round"></div>
+                <div class="stars">
+                    <ul>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                        <li><img src="/assets/image/star.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="review">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nostrum numquam iusto,  Vel deserunt nemo animi cum facilis nostrum corrupti odio quisquam eveniet dolor, ipsum omnis!
+                </div>
+                <div class="name">
+                    Ravindu
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
