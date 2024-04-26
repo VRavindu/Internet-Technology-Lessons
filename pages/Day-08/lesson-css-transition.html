@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box-1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 250px auto;
+
+            /* transition-property: width; */
+            /* transition-property: background-color height width;
+            transition-duration: 3s;
+            transition-timing-function: ease;
+            transition-delay: 2s; */
+
+            /* property , duration , timing-fuction , delay */
+            /* transition:width 3s ease 2s; */
+        }
+        .box-1:hover{
+            width: 400px;
+            height: 400px;
+            /* border-radius: 0 0 50px 50px; */
+            background-color: blue;
+            border-radius: 200px;
+        }
+
+        .box-2 {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            margin: 100px auto;
+        }
+        .box-2:hover {
+            background-color: blueviolet;
+            width: 150px;
+            height: 150px;
+
+            transition: 2s;
+        }
+
+        h1 {
+            transition: all 2s ease;
+        }
+
+        h1:hover {
+            color: red;
+            font-size: 100px;
+            font-style: italic;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+
+    <hr>
+
+    <h1>Hello World !</h1>
+</body>
+</html>

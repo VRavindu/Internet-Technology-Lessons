@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .box-1 {
+            background-color: red;
+            position: relative;
+            left: 100px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+
+            animation-name: up-down;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes square {
+            0% {
+                background-color: aqua;
+                left: 100px;
+                top: 100px;
+            }
+            25%{
+                background-color: blue;
+                left: 600px;
+                top: 100px;
+            }
+            50% {
+                background-color: chartreuse;
+                left: 600px;
+                top: 600px;
+            }
+            75%{
+                background-color: magenta;
+                left: 100px;
+                top: 600px;
+            }
+            100% {
+                border-radius: 50px;
+                left: 100px;
+                top: 100px;
+            }
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(100px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box-1"></div>
+
+</body>
+</html>
