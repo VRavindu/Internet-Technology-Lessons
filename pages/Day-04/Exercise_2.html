@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Day 2</title>
+
+    <style>
+        td{
+            height: 30px;
+        }
+        th{
+            background-color: aquamarine;
+            height: 30px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" style="width: 500px; height: 500px;">
+        <thead>
+            <tr>
+                <th colspan="3" style="text-align: left;">Personal Information</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Name : </td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Age :</td>
+                <td colspan="2"><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Address :</td>
+                <td>Street :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>City :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Zip Code :</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <th colspan="3" style="text-align: left;">Additional Information</th>
+            </tr>
+
+            <tr>
+                <td colspan="3"><textarea name="info" id="txtArea" cols="60" rows="10"></textarea></td>
+            </tr>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3"><input type="button" value="Submit"></td>
+                </tr>
+            </tfoot>
+        
+        </tbody>
+    </table>
+    
+</body>
+</html>
