@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS FlexBox</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 12px;
+            margin: 0px;
+        }
+
+        .box1 {
+            background-color: #3cbefc;
+        }
+
+        .box2 {
+            background-color: #fb83b3;
+        }
+
+        .box3 {
+            background-color: #f8fc46;
+        }
+
+        .box4 {
+            background-color: #77e68a;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* row(default) , row-reverse , colomn , colomn-reverse */
+
+            /*justify-content: flex-start; /*(default) (flex-direction: row)*/
+            /* flex-start , flex-end , center*/
+
+            /* justify-content: space-evenly; */
+            /* space-between , space-around , space-evenly */
+
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* flex-start , flex-end , center (flex-direction: column) */
+            /* height: 730px; */
+            /* background-color: bisque; */
+
+            /* flex-wrap: wrap; */
+            /* justify-content: flex-start; */
+
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box1">5</div>
+        <div class="box box2">6</div>
+        <div class="box box3">7</div>
+        <div class="box box4">8</div>
+        <div class="box box1">9</div>
+        <div class="box box2">10</div>
+        <div class="box box3">11</div>
+        <div class="box box4">12</div>
+        
+    </div>
+</body>
+</html>

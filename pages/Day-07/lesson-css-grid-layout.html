@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 25% 25% 25% 25%; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3, 1fr 2fr);
+        }
+
+        .container > div {
+            border: 1px solid;
+        }
+
+        .container-2 {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+        }
+
+        .container-2 > div {
+            border: 1px solid;
+        }
+        .box-5 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+        .box-5 > div {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, quasi quae mollitia nam ratione quisquam illo numquam ex dignissimos.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, quasi quae mollitia nam ratione quisquam illo numquam ex dignissimos.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, quasi quae mollitia nam ratione quisquam illo numquam ex dignissimos.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, quasi quae mollitia nam ratione quisquam illo numquam ex dignissimos.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, quasi quae mollitia nam ratione quisquam illo numquam ex dignissimos.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque, quasi quae mollitia nam ratione quisquam illo numquam ex dignissimos.</div>
+    </div>
+     -->
+    <div class="container-2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="box-5">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>
