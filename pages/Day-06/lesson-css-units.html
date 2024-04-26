@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Units</title>
+    <style>
+        .box {
+            height: 100px;
+            background: linear-gradient(to bottom, red, black);
+            border: 1px solid white;
+        }
+
+        .box-pixels {
+            width: 300px;
+        }
+        .box-percentage {
+            width: 50%;
+        }
+        .box-viewwidth {
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-pixels"></div>
+    <div class="box box-percentage"></div>
+    <div class="box box-viewwidth"></div>
+    <hr>
+    <br><br>
+    <div style="width: 400px; background-color: wheat;">
+        <div style="height: 100px; width: 200px; background-color: aqua;"></div>
+        <div style="height: 100px; width: 50%; background-color: chartreuse;"></div>
+        <div style="height: 100px; width: 50vw; background-color:violet;"></div>
+    </div><br>
+    <br>
+
+    <div>
+        <div style="font-size: 1rem;">Hello World</div>
+        <div style="font-size: 2rem;">Hello World</div>
+        <div style="font-size: 3rem;">Hello World</div>
+        <div style="font-size: 4rem;">Hello World</div>
+    </div>
+    <br><br>
+
+    <div style="font-size: 15px;">
+        <div style="font-size: 1em;">Hello World</div>
+        <div style="font-size: 2em;">Hello World</div>
+        <div style="font-size: 3em;">Hello World</div>
+        <div style="font-size: 4em;">Hello World</div>
+    </div>
+</body>
+</html>
