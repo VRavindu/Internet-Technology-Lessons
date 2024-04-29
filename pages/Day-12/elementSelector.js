@@ -25,3 +25,9 @@ button.addEventListener('click', () => {
     console.log('Hello World')
 })
 
+// Query selector
+
+let abc = document.querySelector('.box')   //Style appling for first of all boxes 
+// let abc = document.querySelectorAll('.box-row .box')   //Style appling for all boxes
+console.log(abc)
+abc.style.backgroundColor='blue'
